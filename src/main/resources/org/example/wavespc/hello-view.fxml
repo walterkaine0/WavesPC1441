@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane styleClass="borderpane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.wavespc.HelloController" stylesheets="style.css">
+    <center>
+        <TableView fx:id="tableView">
+            <columns>
+                <TableColumn fx:id="titleCol" text="Название" />
+                <TableColumn fx:id="artistCol" text="Исполнитель" />
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <HBox spacing="10" alignment="CENTER">
+            <Button fx:id="playButton" text="Играть" />
+            <Button fx:id="pauseButton" text="Пауза" />
+            <Label fx:id="currentSongLabel" text="Песня не выбрана" />
+        </HBox>
+    </bottom>
+</BorderPane>
